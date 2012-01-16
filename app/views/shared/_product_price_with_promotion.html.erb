@@ -1,0 +1,6 @@
+<% if product.has_price_promotion? %>
+  <span class="old"><%= product_price(product) %></span>
+  <span class="new"><%= product_price_with_promotion(product) %></span>
+<% else %>
+  <%= product_price(product) %>
+<% end %>
